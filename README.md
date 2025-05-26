@@ -3,14 +3,16 @@
 The assignment Flutter application for S.Rocks.Music.
 
 ## Folder Structure:
+```plaintext
 lib/
 ├── main.dart
 ├── firebaseoptions.dart
 ├── home.dart
 ├── models/
-│ ├── model.dart
-│ ├── services_repository.dart
-│ └── services_view_model.dart
+│   ├── model.dart
+│   ├── services_repository.dart
+│   └── services_view_model.dart
+```
 
 ## Approach
 main.dart initializes the app and sets up necessary services.
