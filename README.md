@@ -1,16 +1,28 @@
 # srocksmusic_demo
 
-A demo Flutter application for S.Rocks.Music.
+The assignment Flutter application for S.Rocks.Music.
 
-## Getting Started
+## Folder Structure:
+lib/
+├── main.dart                   
+├── firebaseoptions.dart        # Firebase configuration and initialization
+├── home.dart                   # Home screen UI and logic
+├── models/
+│   ├── model.dart              # Data model used throughout the app
+│   ├── services_repository.dart # Data fetching and storage logic (repository pattern)
+│   └── services_view_model.dart # ViewModel handling business logic and state management
 
-This project is a starting point for a Flutter application.
+## Approach
+main.dart initializes the app and sets up necessary services.
 
-A few resources to get you started if this is your first Flutter project:
+firebaseoptions.dart contains Firebase configuration, keeping setup separate and reusable.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+The home.dart file manages the main user interface.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+The models folder encapsulates the core app data structures and business logic:
+
+model.dart defines the data models.
+
+services_repository.dart handles data retrieval and persistence, abstracting data sources.
+
+services_view_model.dart manages app state and mediates between UI and data layers following MVVM principles.
